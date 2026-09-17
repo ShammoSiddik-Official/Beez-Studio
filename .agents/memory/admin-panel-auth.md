@@ -4,7 +4,7 @@ description: JWT auth, secure first-run setup flow, and db declaration rebuild r
 ---
 
 ## JWT Auth
-- Signing in `artifacts/api-server/src/lib/auth.ts` via `getJwtSecret()` — reads `SESSION_SECRET` and throws if missing (no fallback)
+- The Console depends on the managed `artifacts/api-server: API Server` workflow being present and healthy; when that service artifact is missing, the login page still renders but every auth request fails.
 - Admin routes under `/api/admin/…` require `Authorization: Bearer <token>` header
 - RBAC: `requireAdmin` = any role, `requireRoot` = root only
 
@@ -19,3 +19,8 @@ description: JWT auth, secure first-run setup flow, and db declaration rebuild r
 After adding new schema files to `lib/db/src/schema/`, run `pnpm run typecheck:libs` from workspace root before running api-server typecheck.
 
 **Why:** Project references require built `.d.ts` in `lib/db/dist`; stale declarations cause TS2305 errors in api-server.
+
+## Recovery check
+- Before investigating credentials, check `/api/healthz` and `/api/admin/auth/setup-status`; `setupRequired: false` means an existing admin account is expected and no setup credentials should be invented.
+
+**Why:** A stopped or missing API workflow presents the same Console login screen as a bad password, while the database can remain completely healthy.
