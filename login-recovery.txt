@@ -1,0 +1,18 @@
+BeeZ Studio Console — Login Recovery
+======================================
+Console path: /admin/
+
+Existing admin accounts (non-secret identifiers):
+- Username: ShammoSiddik | Role: root | Name: Shammo Siddik Shio
+- Username: MdArif | Role: root | Name: Md Arif (Studio Incharge)
+- Username: BeezAdmin1 | Role: editor | Name: Beez Admin 01
+- Username: beezAdmin2 | Role: editor | Name: beez Admin 02
+
+Password: Not included. Passwords are stored as one-way hashes and cannot be recovered.
+
+Recovery:
+- Use one of the usernames above with the password previously created.
+- First-time setup is already complete, so the setup token cannot create another account.
+- If a password is forgotten, use a private password-reset flow; do not share passwords or server secrets in chat.
+
+Never store DATABASE_URL, SESSION_SECRET, or other server secrets in this file.

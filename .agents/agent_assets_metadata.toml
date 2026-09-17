@@ -81,3 +81,17 @@ uri = "file://exports/beez-studio-public-source.zip"
 type = "unspecified"
 title = "BeeZ Studio public site — source code"
 logical_id = "5845d43f-44c3-474a-a247-f6396ee9500c"
+
+[[outputs]]
+id = "31Q98aCNalpEe75-xxrLK"
+uri = "file://login-recovery.txt"
+type = "text"
+title = "BeeZ Studio login recovery"
+description = "Compact recovery note with non-secret admin usernames and safe password recovery guidance."
+logical_id = "9142f0ec-7b28-4060-bfa1-2529f154e376"
+content_hash = "sha256:26429807ae6c59a4f65571d7c2a08602178b94a99db11bf60c97532e26de0fca"
+size = 859
+mtime_ms = 1789687361283
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:97626b27-5b66-4210-9cfb-27855589e79f/9142f0ec-7b28-4060-bfa1-2529f154e376/bbdf3174-6e38-45da-8c3d-f63346cc5183"
+storage_version_token = "1789687362951089"
+content_type = "text/plain"
