@@ -59,21 +59,25 @@ id = "v0YPM3wdmBJJ8wkdk_-Jc"
 uri = "file://beez-studio.md"
 type = "text"
 title = "Beez Studio — Website Overview"
+logical_id = "1554bfde-6760-4535-9d53-44a8008a6e1d"
 
 [[outputs]]
 id = "MHY-EtQXwhGfmcATZCGDK"
 uri = "file://exports/beez-studio-cpanel-complete.zip"
 type = "unspecified"
 title = "BeeZ Studio — complete cPanel upload package"
+logical_id = "4cafb890-ac2d-4cbd-b494-ad5786ff95f4"
 
 [[outputs]]
 id = "cUYHv_56Yr9aAqf8M9nYx"
 uri = "file://exports/beez-studio-console-source.zip"
 type = "unspecified"
 title = "BeeZ Studio Console — source for redesign"
+logical_id = "c8de684b-b4f0-440c-bf2c-57dcc781b7e6"
 
 [[outputs]]
 id = "RghAJFLZcCftHNDKCGoYC"
 uri = "file://exports/beez-studio-public-source.zip"
 type = "unspecified"
 title = "BeeZ Studio public site — source code"
+logical_id = "5845d43f-44c3-474a-a247-f6396ee9500c"

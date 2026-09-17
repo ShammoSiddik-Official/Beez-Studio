@@ -1,0 +1,19 @@
+kind = "design-system"
+previewPath = "/beez-studio-design-system/"
+title = "BeeZ Studio Design System"
+description = "The extracted visual system for BeeZ Studio's architectural consultancy website and operations console: warm neutral surfaces, vivid lime-green brand accents, Inter UI typography, Playfair Display editorial headings, and restrained architectural spacing."
+version = "1.0.0"
+id = "artifacts/beez-studio-design-system"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/beez-studio-design-system/" ]
+localPort = 25028
+
+[services.development]
+run = "pnpm --filter @workspace/beez-studio-design-system run dev"
+
+[services.env]
+PORT = "25028"
+BASE_PATH = "/beez-studio-design-system/"
