@@ -8,6 +8,7 @@ import AdminLayout from "@/components/layout/AdminLayout";
 
 import LoginPage from "@/pages/login";
 import SetupPage from "@/pages/setup";
+import ResetPasswordPage from "@/pages/reset-password";
 import DashboardPage from "@/pages/dashboard";
 import ContactsPage from "@/pages/contacts";
 import ProjectsPage from "@/pages/projects";
@@ -34,6 +35,7 @@ function AdminRouter() {
   return (
     <Switch>
       <Route path="/login" component={LoginPage} />
+      <Route path="/reset" component={ResetPasswordPage} />
       <Route path="/">
         <ProtectedRoute>
           <AdminLayout><DashboardPage /></AdminLayout>

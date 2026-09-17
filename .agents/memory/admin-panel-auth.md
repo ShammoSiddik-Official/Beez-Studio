@@ -24,3 +24,8 @@ After adding new schema files to `lib/db/src/schema/`, run `pnpm run typecheck:l
 - Before investigating credentials, check `/api/healthz` and `/api/admin/auth/setup-status`; `setupRequired: false` means an existing admin account is expected and no setup credentials should be invented.
 
 **Why:** A stopped or missing API workflow presents the same Console login screen as a bad password, while the database can remain completely healthy.
+
+## Password recovery
+- Passwords are never recoverable; the operator-authorized reset flow accepts the existing SESSION_SECRET, target username, and a new password, then replaces only the stored hash.
+
+**Why:** The existing admin schema stores one-way password hashes, so reset—not credential disclosure—is the safe recovery path.

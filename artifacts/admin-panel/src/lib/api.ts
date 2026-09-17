@@ -25,6 +25,11 @@ export const api = {
       method: "POST",
       body: JSON.stringify({ setupToken, username, password, displayName }),
     }),
+  resetPassword: (setupToken: string, username: string, password: string) =>
+    request<{ success: boolean }>("/admin/auth/reset-password", {
+      method: "POST",
+      body: JSON.stringify({ setupToken, username, password }),
+    }),
   login: (username: string, password: string) =>
     request<{ token: string; user: AdminUser }>("/admin/auth/login", {
       method: "POST",

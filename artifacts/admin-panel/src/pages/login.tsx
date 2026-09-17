@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Redirect } from "wouter";
+import { Link, Redirect } from "wouter";
 import { motion } from "framer-motion";
 import { Shield, Eye, EyeOff, Loader2 } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
@@ -101,6 +101,9 @@ export default function LoginPage() {
               {isLoading ? <><Loader2 size={14} className="animate-spin" /> Signing in…</> : "Sign In"}
             </button>
           </form>
+          <Link href="/reset" className="block text-center text-xs text-muted-foreground hover:text-primary transition-colors mt-5">
+            Forgot password?
+          </Link>
         </div>
 
         <p className="text-center text-xs text-muted-foreground/40 mt-6">

@@ -112,6 +112,30 @@ app.post("/api/admin/auth/setup", asyncRoute(async (req, res) => {
   res.status(201).json({ token: signToken(user), user });
 }));
 
+app.post("/api/admin/auth/reset-password", asyncRoute(async (req, res) => {
+  requireDatabase();
+  const { setupToken, username, password } = req.body ?? {};
+  if (!setupToken || setupToken !== process.env.SESSION_SECRET) {
+    res.status(401).json({ error: "Invalid setup token" });
+    return;
+  }
+  if (!username || !password || String(password).length < 8) {
+    res.status(400).json({ error: "Username and password (min 8 chars) required" });
+    return;
+  }
+
+  const passwordHash = await bcrypt.hash(String(password), 12);
+  const { rowCount } = await pool.query(
+    "UPDATE admin_users SET password_hash = $1 WHERE username = $2",
+    [passwordHash, String(username).trim()],
+  );
+  if (!rowCount) {
+    res.status(404).json({ error: "Admin account not found" });
+    return;
+  }
+  res.json({ success: true });
+}));
+
 app.post("/api/admin/auth/login", asyncRoute(async (req, res) => {
   requireDatabase();
   const { username, password } = req.body ?? {};
