@@ -15,7 +15,7 @@ export default function ChatBot() {
     {
       role: "assistant",
       content:
-        "Hello! I'm BeeZ AI, your architectural consultant. Ask me anything about our services, projects, or architecture in general. How can I help you today?",
+        "Hello! I'm BeeZ AI, your architectural consultant. Ask me anything about our services, projects, or architecture in general.",
     },
   ]);
   const [input, setInput] = useState("");

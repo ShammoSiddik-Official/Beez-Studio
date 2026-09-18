@@ -19,16 +19,40 @@ export default function Footer() {
               Building Bangladesh's future, one landmark at a time. Since 2007.
             </p>
             <div className="flex items-center gap-4 text-muted-foreground">
-              <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors" aria-label="Facebook">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-primary transition-colors"
+                aria-label="Facebook"
+              >
                 <SiFacebook size={20} />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors" aria-label="Instagram">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-primary transition-colors"
+                aria-label="Instagram"
+              >
                 <SiInstagram size={20} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors" aria-label="LinkedIn">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-primary transition-colors"
+                aria-label="LinkedIn"
+              >
                 <Linkedin size={20} />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors" aria-label="X / Twitter">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-primary transition-colors"
+                aria-label="X / Twitter"
+              >
                 <SiX size={18} />
               </a>
             </div>
@@ -38,22 +62,34 @@ export default function Footer() {
             <h4 className="font-serif font-semibold text-lg mb-6">Studio</h4>
             <ul className="space-y-4">
               <li>
-                <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="/about"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/projects" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="/projects"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Portfolio
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="/services"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="/contact"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Contact
                 </Link>
               </li>
@@ -75,14 +111,35 @@ export default function Footer() {
           <div>
             <h4 className="font-serif font-semibold text-lg mb-6">Contact</h4>
             <ul className="space-y-4 text-muted-foreground text-sm leading-relaxed">
-              <li>F-109, H-41/B, R-01<br />Dhanmondi R/A, Dhaka-1205<br />Bangladesh</li>
-              <li>+880 1711 18066<br />Fax: +880 2 44612330</li>
               <li>
-                <a href="mailto:support@beezstudio.com.bd" className="hover:text-primary transition-colors">support@beezstudio.com.bd</a><br />
-                <a href="mailto:info.beezstudio@gmail.com" className="hover:text-primary transition-colors">info.beezstudio@gmail.com</a>
+                F-109, H-41/B, R-01
+                <br />
+                Dhanmondi R/A, Dhaka-1205
+                <br />
+                Bangladesh
               </li>
               <li>
-                <a href="http://www.beezstudio.com.bd" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">www.beezstudio.com.bd</a>
+                +8801711178066
+                <br />
+                Fax: +880244612330
+              </li>
+              <li>
+                <a
+                  href="mailto:info.beezstudio@gmail.com"
+                  className="hover:text-primary transition-colors"
+                >
+                  info.beezstudio@gmail.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="http://www.beezstudio.com.bd"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  www.beezstudio.com.bd
+                </a>
               </li>
             </ul>
           </div>
@@ -90,10 +147,17 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-border space-y-3">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-muted-foreground">
-            <p>&copy; 2026 BeeZ Studio. Architectural Consultancy & Construction. All rights reserved.</p>
+            <p>
+              &copy; 2026 BeeZ Studio. Architectural Consultancy & Construction.
+              All rights reserved.
+            </p>
             <div className="flex gap-6 mt-4 md:mt-0">
-              <Link href="#" className="hover:text-primary transition-colors">Privacy Policy</Link>
-              <Link href="#" className="hover:text-primary transition-colors">Terms of Service</Link>
+              <Link href="#" className="hover:text-primary transition-colors">
+                Privacy Policy
+              </Link>
+              <Link href="#" className="hover:text-primary transition-colors">
+                Terms of Service
+              </Link>
             </div>
           </div>
           {/* Developer Credit */}
@@ -102,9 +166,9 @@ export default function Footer() {
             <span>
               Designed & developed by{" "}
               <span className="text-primary/70 font-medium hover:text-primary transition-colors cursor-default">
-                Md. Harun-or-Rashid
-              </span>
-              {" "}— Full Stack Developer & Founder, BeeZ Studio
+                Shammo Siddik
+              </span>{" "}
+              — Ai & Full Stack Developer , BeeZ Studio
             </span>
           </div>
         </div>
